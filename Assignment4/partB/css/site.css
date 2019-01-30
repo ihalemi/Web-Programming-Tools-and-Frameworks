@@ -1,0 +1,111 @@
+/*********************************************************************************
+*
+* WEB222 – Assignment #4b
+*
+* I declare that this assignment is my own work in accordance with Seneca
+* Academic Policy. No part of this assignment has been copied manually or
+* electronically from any other source (including web sites) or distributed to
+* other students.
+*
+* Name: ____Ilias Halemi___ Student ID: ___062 111 133_____ Date: __March 20th, 2018
+*
+********************************************************************************/
+
+/* Step 1: styling the main container */
+/*select elements with class name main-container*/
+.main-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*select all elements with class name main-container with child element nav*/
+.main-container nav {
+    width: 30%;
+    float: left;
+}
+/*select all elements with class name main-container with child elements with class name main*/
+.main-container .main {
+    width: 70%;
+    float: right;
+}
+/*select all elements with class name main-container with the header tag*/
+.main-container header {
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: solid 1px #cccccc;
+    margin-bottom: 30px;
+}
+/*select all elements with class name main-container with child tag
+header and an h1 tag within this header tag*/
+.main-container header h1 {
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+/*select all elements with class name main-container with a
+footer child*/
+.main-container footer {
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: solid 1px #cccccc;
+    font-size: 13px;
+}
+
+
+/* Step 2: styling nav and logo */
+/*select element with id logo*/
+#logo {
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*select element with id logo with a child tag img*/
+#logo img {
+    width: 94px;
+    vertical-align: middle;
+}
+/*select nav elements with nested ul elements*/
+nav ul {
+    list-style-type: none;
+}
+/*select all nav elements with nested ul tags which have nested a tags*/
+nav ul a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* Step 3: styling province container */
+/*select any div tag with the class name province*/
+div.province {
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+/*select any div tag with class name province with a
+child element with a class name description*/
+div.province .description {
+    max-height: 165px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+/*select any div tag with class name province with an a link tag*/
+div.province a {
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+}
+/*select any img tag with a class name flag*/
+img.flag {
+    width: 100%;
+}
