@@ -1,0 +1,124 @@
+/* css for site */
+
+/*body and header styling*/
+body {
+  background-color: #dddddd;
+}
+
+header {
+  background-color: #AAAAAA;
+  padding: 5px 25px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+/*navigation styling*/
+nav {
+  width: 200px;
+  height: 500px;
+  border: 1px solid #444;
+  float: left;
+  padding: 10px;
+  background-color: #AAAAAA;
+  border: 1px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0px;
+}
+
+nav ul li{
+
+			background-color: #AAAAAA;
+		}
+
+nav ul li a{
+  background-color: #AAAAAA;
+	color: #eee;
+	text-decoration: none;
+	padding:0 5px;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size:15px;
+}
+
+nav ul li a:visited{
+    color:black;
+}
+
+nav ul li a:hover{
+    color:blue;
+}
+
+nav.menu {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+}
+
+section h2 {
+  position: relative;
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto 20px;
+  padding: 45px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  background-color: #7FDBFF;
+}
+
+/* side panel */
+ aside #errors {
+   background-color: #AAAAAA;
+   width: 200px;
+   height: 300px;
+   display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+  float: right;
+  border: 1px solid black;
+}
+
+.form {
+  position: relative;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  background-color: #444;
+  color: #eee;
+  padding: 10px;
+}
+
+footer h2 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0 5px;
+}

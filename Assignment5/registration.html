@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Halemi</title>
+  <link rel="stylesheet" href="normalize1.css" type="text/css"/>
+  <script src="registration.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <header>
+      <img src="bike2.jpg" alt="bike-store"/>
+      <h1>
+        ~The Bike Store~
+      </h1>
+  </header>
+
+  <nav>
+    <div class="menu">
+      <h1>Welcome !</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html">Sign-up</a></li>
+        <li><a href="https://www.amazon.ca/">Store</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="centre">
+    <h2>Sign-up for amazing deals and promotion!</h2>
+    <br>
+    <aside>
+      <div id="errors">
+      </div>
+    </aside>
+
+    <div class="form">
+    <form id="signup" name="signup" action="https://httpbin.org/post" method="post" onsubmit="return formCheck();">
+
+            First Name*: <span class="inputbox"><input class="inputtext" type="text" name ="fname" id="fname" placeholder="John" autofocus required></span>&nbsp;<br><br>
+            Last Name*: <span class="inputbox"><input class="inputtext" type="text" name="lname" id="lname" placeholder="Smith" required></span>&nbsp;<br><br>
+            Username*: <span class="inputbox"><input class="inputtext" type="text" name="user" id="user" placeholder="User1" required></span>&nbsp;<br><br>
+            Password*: <span class="inputbox"><input class="inputtext" type="password" name="pass" id="pass" placeholder="Password1" required></span>&nbsp;<br><br>
+            Password Confirmation*: <span class="inputbox"><input class="inputtext" type="password" name="repass" id="repass" required></span>&nbsp;<br><br>
+
+            <fieldset>
+                                 <legend>Home Address</legend>
+                                 Unit Number*: <input type="number" name="unit" required/><br/>
+                                 Street Number*: <input type="number" name="street_no" required/><br/>
+                                 Street Name*: <input type="text" name="street_name" pattern="^[a-zA-Z]+$" required/><br/>
+                                 City*: <input type="text" name="city" pattern="^[a-zA-Z]+$" required/><br/>
+                                 Province*:
+                                  <select name="province" id="province">
+                                             <option value="Ontario" selected>Ontario</option>
+                                             <option value="British Columbia">British Columbia</option>
+                                             <option value="Quebec">Quebec</option>
+                                             <option value="Alberta">Alberta</option>
+                                             <option value="Nova Scotia">Nova Scotia</option>
+                                             <option value="Manitoba">Manitoba</option>
+                                             <option value="Saskatchewan">Saskatchewan</option>
+                                             <option value="New Brunswick">New Brunswick</option>
+                                             <option value="Prince Edward Island">Prince Edward Island</option>
+                                  </select><br/>
+
+                                 Postal Code*: <input type="text" name="postal_code" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required/>
+                                 Email Adrress*: <input type="email" name="email" id="email" placeholder = "email123@mail.com" required><br><br>
+                                 Phone Number*: <input type="tel" name="phone" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="333-333-3333" required><br><br>
+              </fieldset> <br/>
+
+        <input type="hidden" name="lastName" id="lastName" value="Halemi" />
+        <input type="hidden" name="studentId" id="studentID" value="062111133" />
+
+        <br>
+        <input type="submit" value="Sign Up">
+        &nbsp;&nbsp;
+        <input type="reset" value="Reset" onclick="clearErrors();">
+
+    </form>
+  </div>
+  </section>
+
+<footer>
+  <h2> &copy; 2018 Ilias Halemi </h2>
+</footer>
+
+</div>
+</body>
+</html>
